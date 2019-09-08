@@ -10,18 +10,19 @@ ASP.NET Core / Web API / MongoDB
 
 安装教程
 
-1. 安装配置 MongoDB
-2. 配置数据库
-在MongoDB存储数据的目录打开命令行界面。 运行以下命令
+1. 安装配置 MongoDB.
+2. 连接MongoDB.
+在MongoDB存储数据的目录打开命令行界面, 运行以下命令:
 mongod --dbpath <data_directory_path>
-打开另一个命令行界面实例。 通过依次运行以下命令
+3. 创建数据库.
+打开另一个命令行界面实例, 通过依次运行以下命令:
 1). mongo
 2). use BookstoreDb
 3). db.createCollection('Books')
 4). db.Books.insertMany([{'Name':'Design Patterns','Price':54.93,'Category':'Computers','Author':'Ralph Johnson'}, {'Name':'Clean Code','Price':43.15,'Category':'Computers','Author':'Robert C. Martin'}])
-3. 打开项目:
+4. 打开项目:
 Visual Studio打开JD.BooksAPI.sln.
-4. 运行项目:
+5. 运行项目:
 F5运行即可.
 
 使用说明
